@@ -1,0 +1,16 @@
+.contact-title {
+    text-align: center;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: max(100px, 15%) 1fr;
+    grid-template-rows: max(100px, 15%) 1fr;
+    align-items: center;
+    font-weight: bold;
+}
+
+.icon {
+    width: max(100px, 15%);
+    fill: #0c717e;
+}

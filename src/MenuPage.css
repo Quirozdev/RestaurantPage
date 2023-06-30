@@ -1,0 +1,45 @@
+.menu-title {
+    text-align: center;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #0c717e;
+    color: white;
+}
+
+.menu-item-name, .menu-item-desc, .menu-item-price {
+    padding: 0 16px;
+}
+
+.menu-item-name {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-item-price {
+    justify-self: end;
+    align-self: end;
+}
+
+.menu-item-price::before {
+    content: "$";
+}
+
+.menu-item-img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
